@@ -41,11 +41,16 @@ h3{
     margin-right: 5px;
 }
 
-.navbar-brand{
+.navbar-light .navbar-brand{
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: #373737;
+}
+
+@media (min-width: 992px)
+.navbar-light .navbar-brand{
+    font-size: 0;
 }
 
 #navbarSupportedContent{
