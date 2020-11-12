@@ -91,7 +91,7 @@
 
 html, body{
     scroll-behavior: smooth;
-    background-color: #373737;
+    background-color: transparent;
     min-height: 100%;
     padding: 12;
     margin: 6;
