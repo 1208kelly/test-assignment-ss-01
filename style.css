@@ -151,9 +151,10 @@ h3{
     color: #373737;
 }
 
-@media (min-width: 992px)
-.navbar-light .navbar-brand{
-    font-size: 0;
+@media (min-width: 992px){
+    .navbar-light .navbar-brand{
+        font-size: 0;
+    }
 }
 
 #navbarSupportedContent{
@@ -297,7 +298,7 @@ h3{
 }
 
 .lets-chat-02{
-    color: #blue;
+    color: blue;
     font-weight: 400;
 }
 
