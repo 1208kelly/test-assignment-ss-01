@@ -1,10 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+
+/*------- Animated Background -------------------------------------------------------------------------------------------*/
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #52ecf1 20%, #e6f9fc 80%);
+    z-index: -1;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+    z-index: -1;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+    z-index: -1;
+}
+.bgBottom {
+    z-index: 0;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100vh;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: -1;
+}
+.waveTop {
+    background-size: 50% 100px;
+    z-index: -1;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+   z-index: -1;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+    z-index: -1;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+    z-index: -1;
+}
+.waveBottom {
+    background-size: 50% 100px;
+    z-index: -1;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+    z-index: -1;
+}
+
+
+
 /*------- Fonts & Background -------------------------------------------------------------------------------------------*/
 
 html, body{
     scroll-behavior: smooth;
     background-color: #373737;
+    min-height: 100%;
     padding: 12;
     margin: 6;
 }
@@ -25,6 +113,20 @@ h3{
 
 
 
+/*------- Containers & Boxes -------------------------------------------------------------------------------------------*/
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: table;
+}
+
+
+
 /*------- Navbar -------------------------------------------------------------------------------------------*/
 
 .fixed-top{
@@ -32,6 +134,7 @@ h3{
     top: 0;
     width: 100%;
     padding-top: 20px;
+    z-index: 99;
 }
 
 #robin-logo{
@@ -163,4 +266,52 @@ h3{
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+
+/*------- Contact -------------------------------------------------------------------------------------------*/
+
+.contact-panel{
+    background-color: transparent;
+    margin-bottom: 120px;
+}
+
+.lets-chat{
+    color: #ff5a09;
+    font-weight: 400;
+}
+
+.form-control{
+    background-color: #fff;
+    color: #d4d4dc;
+    border: 1px solid #d4d4dc;
+}
+
+
+
+/*------- Contact 02 -------------------------------------------------------------------------------------------*/
+
+.contact-panel-02{
+    background-color: #dddddd;
+    margin-bottom: 120px;
+}
+
+.lets-chat-02{
+    color: #blue;
+    font-weight: 400;
+}
+
+.form-control-02{
+    background-color: #fff;
+    color: #d4d4dc;
+    border: 1px solid #d4d4dc;
+}
+
+
+
+/*------- Footer -------------------------------------------------------------------------------------------*/
+
+.page-footer{
+    position: absolute;
+    z-index: 97;
 }
