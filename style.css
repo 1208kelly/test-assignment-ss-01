@@ -19,7 +19,7 @@ html, body{
 
 /*------- Navbar -------------------------------------------------------------------------------------------*/
 
-.fixed-top {
+.fixed-top{
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,4 +33,81 @@ html, body{
     background-color: transparent;
     height: 40px;
     width: 40px;
+}
+
+#navbarSupportedContent{
+    left: 50%;
+}
+
+.nav-link{
+    color: #373737;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+.nav-link:hover{
+    color: #737373;
+}
+
+.dropdown-menu{
+    color: #373737;
+    border: none;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+}
+
+.dropdown-item{
+    width: 90%;
+    margin: auto;
+    color: #373737;
+    font-size: 14px;
+    border-radius: .25rem;
+}
+
+.btn{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-link{
+    color: #373737;
+    border: 1px solid #373737;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.btn-link:hover{
+    color: #737373;
+    background-color: transparent;
+    border-color: #737373;
+    text-decoration: none;
+}
+
+
+
+/*------- Dropdown Item Logos -------------------------------------------------------------------------------------------*/
+
+#slack-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#zapier-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#google-sheets-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#mailchimp-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
