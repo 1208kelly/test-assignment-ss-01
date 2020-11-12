@@ -24,3 +24,13 @@ html, body{
     top: 0;
     width: 100%;
 }
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+#robin-logo{
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+}
