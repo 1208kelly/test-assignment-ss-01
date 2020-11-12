@@ -49,6 +49,11 @@ html, body{
     color: #737373;
 }
 
+.nav-item:hover .dropdown-menu{
+    display: block;
+    transition: all 0.5s ease;
+}
+
 .dropdown-menu{
     color: #373737;
     border: none;
@@ -59,10 +64,18 @@ html, body{
 
 .dropdown-item{
     width: 90%;
-    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    float: left;
     color: #373737;
     font-size: 14px;
     border-radius: .25rem;
+}
+
+.dropdown-divider{
+    height: 2px;
+    color: #000;
 }
 
 .btn{
@@ -75,6 +88,7 @@ html, body{
     border: 1px solid #373737;
     text-decoration: none;
     margin-right: 25px;
+    z-index: 97;
 }
 
 .btn-link:hover{
