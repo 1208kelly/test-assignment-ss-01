@@ -19,8 +19,12 @@ const landingPanelOptions = {}
 const landingPanelScroller = new IntersectionObserver(function(
     entries, landingPanelScroller) {
         entries.forEach(entry => {
-            console.log(entry.target);
-        })
+            if(!entry.isIntersecting) {
+                navShadow.classList.add("nav-scrolled");
+            } else {
+                navShadow.classList.remove("nav-scrolled");
+            }
+        });
     }, 
     landingPanelOptions);
 
