@@ -23,7 +23,7 @@
     bottom: 0;
     top: 0;
     margin: auto;
-    z-index: -1;
+    z-index: -10;
 }
 .waveWrapperInner {
     position: absolute;
@@ -31,21 +31,20 @@
     overflow: hidden;
     height: 100vh;
     bottom: -1px;
-    background-image: linear-gradient(to top, #52ecf1 20%, #e6f9fc 80%);
-    z-index: -1;
+    background-image: linear-gradient(to top, #ffecdb 20%, #fff 80%);
+    z-index: -5;
+    
 }
 .bgTop {
-    z-index: 15;
-    opacity: 0.5;
     z-index: -1;
+    opacity: 0.5;
 }
 .bgMiddle {
-    z-index: 10;
+    z-index: -2;
     opacity: 0.75;
-    z-index: -1;
 }
 .bgBottom {
-    z-index: 0;
+    z-index: -3;
 }
 .wave {
     position: absolute;
@@ -55,7 +54,7 @@
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
     transform-origin: center bottom;
-    z-index: -1;
+    z-index: -5;
 }
 .waveTop {
     background-size: 50% 100px;
@@ -70,19 +69,19 @@
 }
 .waveMiddle {
     background-size: 50% 120px;
-    z-index: -1;
+    z-index: -2;
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 10s linear infinite;
-    z-index: -1;
+    z-index: -2;
 }
 .waveBottom {
     background-size: 50% 100px;
-    z-index: -1;
+    z-index: -3;
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
-    z-index: -1;
+    z-index: -3;
 }
 
 
@@ -98,7 +97,7 @@ html, body{
 }
 
 .back-image{
-    background-color: #afafaf;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
 }
@@ -123,6 +122,7 @@ h3{
     margin-top: 80px;
     margin-bottom: 20px;
     display: table;
+    z-index: 50;
 }
 
 
@@ -135,6 +135,10 @@ h3{
     width: 100%;
     padding-top: 20px;
     z-index: 99;
+}
+
+.bg-light {
+    background-color: #fff!important;
 }
 
 #robin-logo{
@@ -341,11 +345,35 @@ h3{
 }
 
 
-/*------- Contact -------------------------------------------------------------------------------------------*/
+/*------- Landing Page -------------------------------------------------------------------------------------------*/
 
-.contact-panel{
+.landing-panel{
     background-color: transparent;
     margin-bottom: 120px;
+    color: #373737;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 100vh;
+    z-index: 50;
+}
+
+.landing-header{
+    color: #373737;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#landing-title{
+    color: #373737;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 5rem;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .lets-chat{
