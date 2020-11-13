@@ -94,6 +94,7 @@ html, body{
     min-height: 100%;
     padding: 12;
     margin: 6;
+    color: #000;
 }
 
 .back-image{
@@ -137,10 +138,6 @@ h3{
     z-index: 99;
 }
 
-.bg-light {
-    background-color: #fff!important;
-}
-
 #robin-logo{
     background-color: transparent;
     height: 40px;
@@ -148,11 +145,16 @@ h3{
     margin-right: 5px;
 }
 
+.navbar{
+    background-color: #fff;
+}
+
 .navbar-light .navbar-brand{
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: #373737;
+    background-color: transparent;
 }
 
 .mobile-toggle{
@@ -238,6 +240,12 @@ h3{
 
 #navbarSupportedContent{
     left: 50%;
+}
+
+.nav-scrolled{
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);    
 }
 
 
@@ -370,10 +378,21 @@ h3{
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 400;
-    line-height: 5rem;
+    line-height: 4rem;
     width: 50%;
     margin-top: 10%;
     margin-left: 10%;
+}
+
+.landing-text{
+    color: #373737;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 2rem;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 10%
 }
 
 .lets-chat{
@@ -389,23 +408,145 @@ h3{
 
 
 
-/*------- Contact 02 -------------------------------------------------------------------------------------------*/
+/*------- Carousel -------------------------------------------------------------------------------------------*/
 
-.contact-panel-02{
-    background-color: #dddddd;
-    margin-bottom: 120px;
+.carousel-item{
+    height: 50px;
+    width: 100px;
 }
 
-.lets-chat-02{
-    color: blue;
-    font-weight: 400;
-}
 
-.form-control-02{
-    background-color: #fff;
-    color: #d4d4dc;
-    border: 1px solid #d4d4dc;
-}
+
+/*------- Questionaire Panel -------------------------------------------------------------------------------------------*/
+
+/* PAGE & INPUT STYLING */
+
+  .btn-questionaire {
+    border: 1px solid #808080;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+    border-radius: 3px;
+    -webkit-transition: background 600ms ease, color 600ms ease;
+    transition: background 600ms ease, color 600ms ease;
+  }
+  .btn-questionaire span {
+    border: 1px solid #808080;
+    display: inline-block;
+    padding: 1px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -5px;
+  }
+  
+  input[type="radio"].toggle {
+    display: none;
+  }
+  input[type="radio"].toggle + label {
+    cursor: pointer;
+    min-width: 80px;
+  }
+  input[type="radio"].toggle + label:hover {
+    background: none;
+    color: #FFF;
+  }
+  input[type="radio"].toggle + label:after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+  }
+  
+  input[type="radio"].toggle.toggle-left + label:after {
+    left: 100%;
+  }
+  input[type="radio"].toggle.toggle-right + label {
+    margin-left: 10px;
+  }
+  input[type="radio"].toggle.toggle-right + label:after {
+    left: -100%;
+  }
+  input[type="radio"].toggle:checked + label {
+    background: #FFF;
+    cursor: default;
+    color: #000;
+  }
+  input[type="radio"].toggle:checked + label:after {
+    left: 0;
+  }
+  
+  /* ENDS */
+  
+  /* UPFORM STYLE STARTS*/
+  .upform input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+    border-color: blue !important;
+  }
+  .upform input, select, textarea {
+    background-color: #000 !important;
+    color: #FFF;
+  }
+  .upform {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                      supported by Chrome and Opera */
+    max-width: 900px;
+    margin: 300px auto;
+    margin-bottom: 500px;
+    padding: 0 20px;
+  }
+  
+  
+  .upform .upform-main .input-block {
+    padding: 30px 0;
+    opacity: 0.25;
+    cursor: default;
+  }
+  .upform .upform-main .input-block .label {
+    display: block;
+    font-size: 1.1em;
+    line-height: 30px;
+  }
+  .upform .upform-main .input-block .input-control {
+    margin: 20px 0;
+  }
+  .upform .upform-main .input-block .input-control input[type=text] {
+    border: none;
+    outline-width: 0;
+    border-bottom: 2px solid #CCC;
+    width: 100%;
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+  
+  .upform .upform-main .input-block.active {
+    opacity: 1;
+  }
+  
+  .upform .upform-footer {
+    margin-top: 60px;
+  }
+  .upform .upform-footer .btn {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 20px;
+  }
+  /* UPFORM STYLE ENDS*/
+  
+  
 
 
 
