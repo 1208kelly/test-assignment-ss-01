@@ -35,8 +35,8 @@ h3{
     width: 100%;
     height: 100vh;
     padding-top: 5px;
-    padding-bottom: 50px;
-    margin-top: 80px;
+    padding-bottom: 5px;
+    margin-top: 5px;
     margin-bottom: 20px;
     display: table;
     z-index: 50;
@@ -273,12 +273,12 @@ h3{
 
 .landing-panel{
     background-color: transparent;
-    margin-bottom: 120px;
     color: #373737;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 300;
     height: 100vh;
+    margin-top: 80px;
     z-index: 50;
 }
 
@@ -337,7 +337,7 @@ h3{
 }
 
 .carousel-inner {
-    border-radius: 2%;
+    border-radius: 20px;
 }
 
 
@@ -439,7 +439,7 @@ input[type="radio"].toggle:checked + label:after {
 }
 
 .upform {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -448,8 +448,8 @@ input[type="radio"].toggle:checked + label:after {
     user-select: none; /* Non-prefixed version, currently
                       supported by Chrome and Opera */
     max-width: 900px;
-    margin: 300px auto;
-    margin-bottom: 500px;
+    margin: 30px auto;
+    margin-bottom: 50px;
     padding: 0 20px;
 }
   
@@ -499,12 +499,13 @@ input[type="radio"].toggle:checked + label:after {
 /*------- Third Panel -------------------------------------------------------------------------------------------*/
 
 .third-panel{
-    background-color: #a4fced;
-    color: #373737;
+    background-color: #3a4660;
+    color: #fff;
     width: 100%;
     height: 80vh;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 20vh;
 }
 
 .media-body{
@@ -517,12 +518,13 @@ input[type="radio"].toggle:checked + label:after {
 .mr-3{
     height: 80vh;
     margin-left: 10rem;
-    border-radius: 2%;
+    padding: .5rem .5rem;
+    border-radius: 20px;
 }
 
 
 
-/*------- Navbar Media Queries -------------------------------------------------------------------------------------------*/
+/*------- Third Panel Media Queries -------------------------------------------------------------------------------------------*/
 
 @media (max-width: 1171px){
     .mr-3{
@@ -632,7 +634,7 @@ input[type="radio"].toggle:checked + label:after {
     overflow: hidden;
     height: 100vh;
     bottom: -1px;
-    background-image: linear-gradient(to top, #ffecdb 20%, #fff 80%);
+    background-image: linear-gradient(to top, #fff5d7 20%, #fff 80%);
     z-index: -5;
     
 }
