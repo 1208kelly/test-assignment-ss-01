@@ -371,6 +371,8 @@ h3{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 200;
+    display: table-cell;
+    width: 45%;
 }
 
 #landing-title{
@@ -379,12 +381,13 @@ h3{
     font-size: 40px;
     font-weight: 400;
     line-height: 4rem;
-    width: 50%;
-    margin-top: 10%;
-    margin-left: 10%;
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 30%;
+    float: left;
 }
 
-.landing-text{
+#landing-text{
     color: #373737;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -392,10 +395,11 @@ h3{
     line-height: 2rem;
     width: 50%;
     margin-top: 2%;
-    margin-left: 10%
+    margin-left: 30%;
+    float: left;
 }
 
-.lets-chat{
+.text-highlight{
     color: #ff5a09;
     font-weight: 400;
 }
@@ -410,9 +414,14 @@ h3{
 
 /*------- Carousel -------------------------------------------------------------------------------------------*/
 
-.carousel-item{
-    height: 50px;
-    width: 100px;
+.carousel{
+    float: right;
+    right: 30%;
+    height: 321px;
+}
+
+.carousel-inner {
+    border-radius: 2%;
 }
 
 
