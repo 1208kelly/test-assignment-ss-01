@@ -2,90 +2,6 @@
 
 
 
-/*------- Animated Background -------------------------------------------------------------------------------------------*/
-
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-}
-.waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    z-index: -10;
-}
-.waveWrapperInner {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 100vh;
-    bottom: -1px;
-    background-image: linear-gradient(to top, #ffecdb 20%, #fff 80%);
-    z-index: -5;
-    
-}
-.bgTop {
-    z-index: -1;
-    opacity: 0.5;
-}
-.bgMiddle {
-    z-index: -2;
-    opacity: 0.75;
-}
-.bgBottom {
-    z-index: -3;
-}
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100vh;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-    z-index: -5;
-}
-.waveTop {
-    background-size: 50% 100px;
-    z-index: -1;
-}
-.waveAnimation .waveTop {
-  animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
-   z-index: -1;
-}
-.waveMiddle {
-    background-size: 50% 120px;
-    z-index: -2;
-}
-.waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-    z-index: -2;
-}
-.waveBottom {
-    background-size: 50% 100px;
-    z-index: -3;
-}
-.waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
-    z-index: -3;
-}
-
-
-
 /*------- Fonts & Background -------------------------------------------------------------------------------------------*/
 
 html, body{
@@ -426,22 +342,32 @@ h3{
 
 
 
-/*------- Questionaire Panel -------------------------------------------------------------------------------------------*/
+/*------- Second Panel -------------------------------------------------------------------------------------------*/
+
+.second-panel{
+    background-color: #fff;
+    color: #373737;
+    width: 100%;
+    height: 90vh;
+}
 
 /* PAGE & INPUT STYLING */
 
-  .btn-questionaire {
+.btn-questionaire {
     border: 1px solid #808080;
     display: inline-block;
     padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
     font-size: 20px;
     position: relative;
     text-align: left;
     border-radius: 3px;
     -webkit-transition: background 600ms ease, color 600ms ease;
     transition: background 600ms ease, color 600ms ease;
-  }
-  .btn-questionaire span {
+}
+
+.btn-questionaire span {
     border: 1px solid #808080;
     display: inline-block;
     padding: 1px 6px;
@@ -450,20 +376,23 @@ h3{
     vertical-align: middle;
     text-align: center;
     margin-top: -5px;
-  }
+}
   
-  input[type="radio"].toggle {
+input[type="radio"].toggle {
     display: none;
-  }
-  input[type="radio"].toggle + label {
+}
+
+input[type="radio"].toggle + label {
     cursor: pointer;
     min-width: 80px;
-  }
-  input[type="radio"].toggle + label:hover {
+}
+
+input[type="radio"].toggle + label:hover {
     background: none;
     color: #FFF;
-  }
-  input[type="radio"].toggle + label:after {
+}
+
+input[type="radio"].toggle + label:after {
     content: "";
     height: 100%;
     position: absolute;
@@ -472,38 +401,44 @@ h3{
     transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
     width: 100%;
     z-index: -1;
-  }
+}
   
-  input[type="radio"].toggle.toggle-left + label:after {
+input[type="radio"].toggle.toggle-left + label:after {
     left: 100%;
-  }
-  input[type="radio"].toggle.toggle-right + label {
+}
+
+input[type="radio"].toggle.toggle-right + label {
     margin-left: 10px;
-  }
-  input[type="radio"].toggle.toggle-right + label:after {
+}
+
+input[type="radio"].toggle.toggle-right + label:after {
     left: -100%;
-  }
-  input[type="radio"].toggle:checked + label {
+}
+
+input[type="radio"].toggle:checked + label {
     background: #FFF;
     cursor: default;
     color: #000;
-  }
-  input[type="radio"].toggle:checked + label:after {
+}
+
+input[type="radio"].toggle:checked + label:after {
     left: 0;
-  }
+}
   
-  /* ENDS */
+/* ENDS */
   
-  /* UPFORM STYLE STARTS*/
-  .upform input:focus, select:focus, textarea:focus, button:focus {
+/* UPFORM STYLE STARTS*/
+.upform input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
     border-color: blue !important;
-  }
-  .upform input, select, textarea {
+}
+
+.upform input, select, textarea {
     background-color: #000 !important;
     color: #FFF;
-  }
-  .upform {
+}
+
+.upform {
     font-family: 'Open Sans', sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -516,46 +451,84 @@ h3{
     margin: 300px auto;
     margin-bottom: 500px;
     padding: 0 20px;
-  }
+}
   
   
-  .upform .upform-main .input-block {
+.upform .upform-main .input-block {
     padding: 30px 0;
     opacity: 0.25;
     cursor: default;
-  }
-  .upform .upform-main .input-block .label {
+}
+
+.upform .upform-main .input-block .label {
     display: block;
     font-size: 1.1em;
     line-height: 30px;
-  }
-  .upform .upform-main .input-block .input-control {
+}
+
+.upform .upform-main .input-block .input-control {
     margin: 20px 0;
-  }
-  .upform .upform-main .input-block .input-control input[type=text] {
+}
+
+.upform .upform-main .input-block .input-control input[type=text] {
     border: none;
     outline-width: 0;
     border-bottom: 2px solid #CCC;
     width: 100%;
     font-size: 35px;
     padding-bottom: 10px;
-  }
+}
   
-  .upform .upform-main .input-block.active {
+.upform .upform-main .input-block.active {
     opacity: 1;
-  }
+}
   
-  .upform .upform-footer {
+.upform .upform-footer {
     margin-top: 60px;
-  }
-  .upform .upform-footer .btn {
+}
+
+.upform .upform-footer .btn {
     font-size: 24px;
     font-weight: bold;
     padding: 5px 20px;
-  }
-  /* UPFORM STYLE ENDS*/
-  
-  
+}
+/* UPFORM STYLE ENDS*/
+
+
+
+/*------- Third Panel -------------------------------------------------------------------------------------------*/
+
+.third-panel{
+    background-color: #a4fced;
+    color: #373737;
+    width: 100%;
+    height: 80vh;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.media-body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20vh;
+}
+
+.mr-3{
+    height: 80vh;
+    margin-left: 10rem;
+    border-radius: 2%;
+}
+
+
+
+/*------- Navbar Media Queries -------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1171px){
+    .mr-3{
+        margin-left: 5rem;
+    }
+}
 
 
 
@@ -627,3 +600,92 @@ h3{
         display: inline-table;
     }
 }
+
+
+
+/*------- Animated Background -------------------------------------------------------------------------------------------*/
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: -10;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #ffecdb 20%, #fff 80%);
+    z-index: -5;
+    
+}
+.bgTop {
+    z-index: -1;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: -2;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: -3;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100vh;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: -5;
+}
+.waveTop {
+    background-size: 50% 100px;
+    z-index: -1;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+   z-index: -1;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+    z-index: -2;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+    z-index: -2;
+}
+.waveBottom {
+    background-size: 50% 100px;
+    z-index: -3;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+    z-index: -3;
+}
+
+
+
+/*-------  -------------------------------------------------------------------------------------------*/
+
