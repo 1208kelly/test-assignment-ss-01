@@ -27,6 +27,13 @@ h3{
     padding-top: 14px;
 }
 
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
 
 
 /*------- Containers & Boxes -------------------------------------------------------------------------------------------*/
