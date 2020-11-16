@@ -33,7 +33,6 @@ h3{
 
 .container-fluid{
     width: 100%;
-    height: 100vh;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 5px;
@@ -139,11 +138,14 @@ h3{
     text-decoration: none;
 }
 
+#log-in-btn{
+    margin-right: 25px;
+}
+
 .btn-link{
     color: #373737;
     border: 1px solid #373737;
     text-decoration: none;
-    margin-right: 25px;
     z-index: 97;
 }
 
@@ -278,7 +280,7 @@ h3{
     font-size: 15px;
     font-weight: 300;
     height: 100vh;
-    margin-top: 80px;
+    margin-top: 120px;
     z-index: 50;
 }
 
@@ -348,7 +350,26 @@ h3{
     background-color: #fff;
     color: #373737;
     width: 100%;
-    height: 90vh;
+}
+
+.lets-start{
+    color: #373737;
+    text-decoration: none;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+#start-btn{
+    z-index: 97;
+    margin-top: 20px;
+}
+
+@media (max-width: 1171px){
+    #start-btn{
+        display: block;
+        margin: auto;
+    }
 }
 
 /* PAGE & INPUT STYLING */
@@ -579,10 +600,17 @@ hr{
 
 /*------- Sign Up Button -------------------------------------------------------------------------------------------*/
 
-.sign-up-button{
+.sign-up{
+    color: #373737;
+    text-decoration: none;
     width: 100%;
     height: 20vh;
     text-align: center;
+}
+
+#sign-up-btn{
+    margin-top: 20px;
+    z-index: 97;
 }
 
 @media (max-width: 1171px){
