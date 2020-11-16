@@ -385,14 +385,20 @@ h4{
     border: 1px solid #808080;
     display: inline-block;
     padding: 5px 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
     position: relative;
     text-align: left;
-    border-radius: 3px;
+    border: 1px solid #373737;
+    border-radius: 7px;
     -webkit-transition: background 600ms ease, color 600ms ease;
     transition: background 600ms ease, color 600ms ease;
+}
+
+.btn-questionaire:hover{
+    background-color: #373737;
+    color: #fff;
 }
 
 .btn-questionaire span {
@@ -444,7 +450,7 @@ input[type="radio"].toggle.toggle-right + label:after {
 }
 
 input[type="radio"].toggle:checked + label {
-    background: #FFF;
+    background: transparent;
     cursor: default;
     color: #000;
 }
@@ -458,12 +464,12 @@ input[type="radio"].toggle:checked + label:after {
 /* UPFORM STYLE STARTS*/
 .upform input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
-    border-color: blue !important;
+    border-color: #373737 !important;
 }
 
 .upform input, select, textarea {
-    background-color: #000 !important;
-    color: #FFF;
+    background-color: #fff !important;
+    color: #373737;
 }
 
 .upform {
@@ -484,7 +490,6 @@ input[type="radio"].toggle:checked + label:after {
   
 .upform .upform-main .input-block {
     padding: 30px 0;
-    opacity: 0.25;
     cursor: default;
 }
 
@@ -492,6 +497,7 @@ input[type="radio"].toggle:checked + label:after {
     display: block;
     font-size: 1.1em;
     line-height: 30px;
+    font-weight: 300;
 }
 
 .upform .upform-main .input-block .input-control {
@@ -499,12 +505,12 @@ input[type="radio"].toggle:checked + label:after {
 }
 
 .upform .upform-main .input-block .input-control input[type=text] {
-    border: none;
     outline-width: 0;
-    border-bottom: 2px solid #CCC;
-    width: 100%;
-    font-size: 35px;
-    padding-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 15px;
+    margin: auto;
 }
   
 .upform .upform-main .input-block.active {
@@ -512,13 +518,15 @@ input[type="radio"].toggle:checked + label:after {
 }
   
 .upform .upform-footer {
-    margin-top: 60px;
+    margin-top: 5px;
 }
 
 .upform .upform-footer .btn {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 5px 20px;
+    font-size: 15px;
+}
+
+.card{
+    border: 0;
 }
 /* UPFORM STYLE ENDS*/
 
@@ -747,7 +755,7 @@ hr{
 .wave {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100vh;
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
