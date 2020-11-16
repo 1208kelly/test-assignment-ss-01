@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Rob's Test Assignment</title>
 </head>
@@ -94,7 +95,7 @@
     
 
     <section class="landing-panel container-fluid">
-        <div class="landing-header col-md-4" data-aos="fade-left">
+        <div class="landing-header col-md-4" data-aos="fade-right">
             <h2 id="landing-title">Front-End <br>Responsive Web Design</h2>
             <div>
             </div>
@@ -108,16 +109,16 @@
             </div>
         </div>
         <div>
-            <div id="carouselExampleInterval" class="carousel col-md-8 slide" data-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel col-md-8 slide" data-aos="fade-left" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="3000">
                         <img src="images/Death_to_stock_above_5.JPG" class="d-block w-100" alt="pic-01">
                     </div>
                     <div class="carousel-item" data-interval="3000">
-                        <img src="images/DTS_Grand_Design_Daniel_Farò_4122.jpg" class="d-block w-100" alt="pic-02">
+                        <img src="images/Death_to_stock_above_9.JPG" class="d-block w-100" alt="pic-02">
                     </div>
                     <div class="carousel-item" data-interval="3000">
-                        <img src="images/DTS_Grand_Design_Daniel_Farò_4162.jpg" class="d-block w-100" alt="pic-03">
+                        <img src="images/Death_to_stock_above_3.JPG" class="d-block w-100" alt="pic-03">
                     </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -196,10 +197,22 @@
 
     <section class="third-panel container-fluid">
         <div class="media">
-            <img src="images/DeathtoStock_Creative Community1.jpg" class="mr-3" alt="marketing-media">
+            <img src="images/DeathtoStock_Creative Community1.jpg" class="mr-3" data-aos="fade-right" alt="marketing-media">
             <div class="media-body">
               <h5 class="mt-0">Marketing Media</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut vitae magnam inventore animi cum facere quae maxime, omnis eos quia expedita cumque veritatis. Tempora eveniet dolore voluptatem officiis doloremque rerum.
+                
+                <br>
+                <hr>
+
+                Non repellat aperiam praesentium! Adipisci quae laborum sunt commodi itaque, esse accusantium culpa provident ea? Necessitatibus qui doloremque, nostrum quod veniam animi autem architecto facere similique, quo placeat asperiores? In?
+                Aperiam velit repudiandae perspiciatis unde nihil rem sunt consequuntur quia. Suscipit voluptates possimus facilis asperiores nulla velit numquam quis sit nostrum repellat sint officiis, amet accusamus dolorem magni obcaecati nihil.
+                
+                <br>
+                <hr>
+
+                <h4 class="media-bold-text">Adipisci eos <span class="media-text-highlight">temporibus voluptatibus corrupti</span> quidem labore esse delectus.</h4>
             </div>
           </div>
     </section>
@@ -386,7 +399,15 @@
     
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            mirror: true
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>

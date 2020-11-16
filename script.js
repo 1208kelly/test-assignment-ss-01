@@ -12,7 +12,7 @@ mobileToggle.addEventListener('click', () => {
 //------- Navbar Shadow On Scroll -------------------------------------------------------------------------------------------*/
 
 const navShadow = document.querySelector("navbar");
-const landingPanel = document.querySelector("landing-panel");
+const landingPanel = document.querySelector("second-panel");
 
 const landingPanelOptions = {}
 
@@ -31,7 +31,7 @@ const landingPanelScroller = new IntersectionObserver(function(
     landingPanelScroller.observe(landingPanel);
 
 
-//------- Questionaire Panel -------------------------------------------------------------------------------------------*/
+//------- Second Panel -------------------------------------------------------------------------------------------*/
 
     $.fn.upform = function() {
   var $this = $(this);
@@ -180,3 +180,13 @@ $.fn.upform = function() {
 
 $(".upform").upform();
 
+
+
+//------- Third Panel -------------------------------------------------------------------------------------------*/
+
+var skewed = document.querySelector('.skewed');
+
+window.addEventListener('scroll', function(){
+  var value = -10 + window.scrollY/60;
+  skewed.style.transform = "skewY("+ value +"deg)"
+})
