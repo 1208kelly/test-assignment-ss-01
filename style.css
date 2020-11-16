@@ -157,9 +157,16 @@ h4{
 }
 
 .btn-link:hover{
-    color: #737373;
+    color: #fff;
+    background-color: #373737;
+    border-color: #373737;
+    text-decoration: none;
+}
+
+.btn-dark:hover{
     background-color: transparent;
-    border-color: #737373;
+    color: #373737;
+    border: 1px solid #373737;
     text-decoration: none;
 }
 
@@ -307,8 +314,9 @@ h4{
     font-weight: 400;
     line-height: 4rem;
     width: 100%;
-    margin-top: 20%;
-    margin-left: 30%;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 16rem;
     float: left;
 }
 
@@ -320,7 +328,7 @@ h4{
     line-height: 2rem;
     width: 50%;
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 16rem;
     float: left;
 }
 
@@ -341,7 +349,7 @@ h4{
 
 .carousel{
     float: right;
-    right: 30%;
+    right: 16rem;
     height: 321px;
 }
 
@@ -382,27 +390,21 @@ h4{
 /* PAGE & INPUT STYLING */
 
 .btn-questionaire {
-    border: 1px solid #808080;
+    border: 1px solid #373737;
     display: inline-block;
     padding: 5px 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 17px;
     position: relative;
-    text-align: left;
-    border: 1px solid #373737;
+    text-align: center;
     border-radius: 7px;
-    -webkit-transition: background 600ms ease, color 600ms ease;
-    transition: background 600ms ease, color 600ms ease;
-}
-
-.btn-questionaire:hover{
-    background-color: #373737;
-    color: #fff;
+    -webkit-transition: background 200ms ease, color 200ms ease;
+    transition: background 200ms ease, color 200ms ease;
 }
 
 .btn-questionaire span {
-    border: 1px solid #808080;
+    border: 1px solid #373737;
     display: inline-block;
     padding: 1px 6px;
     font-size: 12px;
@@ -422,8 +424,8 @@ input[type="radio"].toggle + label {
 }
 
 input[type="radio"].toggle + label:hover {
-    background: none;
-    color: #FFF;
+    background-color: #373737;
+    color: #fff;
 }
 
 input[type="radio"].toggle + label:after {
@@ -508,9 +510,11 @@ input[type="radio"].toggle:checked + label:after {
     outline-width: 0;
     border: 1px solid #CCC;
     border-radius: 5px;
-    width: 70%;
+    width: 50%;
     font-size: 15px;
     margin: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
   
 .upform .upform-main .input-block.active {
