@@ -196,7 +196,7 @@ h3{
         width: 100%;
     }
 
-    .btn-link{
+    #log-in-btn{
         display: none;
     }
 
@@ -506,7 +506,7 @@ input[type="radio"].toggle:checked + label:after {
     height: 80vh;
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 }
 
 /*.skewed{
@@ -526,6 +526,7 @@ input[type="radio"].toggle:checked + label:after {
     font-weight: 300;
     line-height: 2rem;
     margin-top: 50px;
+    margin-right: 10rem;
 }
 
 .mr-3{
@@ -564,8 +565,30 @@ hr{
 /*------- Third Panel Media Queries -------------------------------------------------------------------------------------------*/
 
 @media (max-width: 1171px){
+    .media{
+        display: block;
+    }
+
     .mr-3{
         margin-left: 5rem;
+        height: 50vh;
+    }
+}
+
+
+
+/*------- Sign Up Button -------------------------------------------------------------------------------------------*/
+
+.sign-up-button{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+@media (max-width: 1171px){
+    #sign-up-btn{
+        display: block;
+        margin: auto;
     }
 }
 
@@ -689,7 +712,7 @@ hr{
 .wave {
     position: absolute;
     left: 0;
-    width: 200%;
+    width: 100%;
     height: 100vh;
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
